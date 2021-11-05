@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Endy Talk</title>
+  
+  <subtitle>关于技术，关于生活</subtitle>
+  <link href="http://blog.viewing.top/atom.xml" rel="self"/>
+  
+  <link href="http://blog.viewing.top/"/>
+  <updated>2021-11-05T06:57:50.132Z</updated>
+  <id>http://blog.viewing.top/</id>
+  
+  <author>
+    <name>Endy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ESLint + React + Typescript</title>
+    <link href="http://blog.viewing.top/2021/11/05/react-typescript-eslint/"/>
+    <id>http://blog.viewing.top/2021/11/05/react-typescript-eslint/</id>
+    <published>2021-11-05T06:37:39.000Z</published>
+    <updated>2021-11-05T06:57:50.132Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>JavaScript</code> 是一个动态的弱类型语言，在开发中比较容易出错。因为没有编译程序，为了寻找 JavaScript 代码错误通常需要在执行过程中不断调试。像 <code>ESLint</code> 这样的可以让程序员在编码的过程中发现问题而不是在执行的过程中, 本教程的主要目标是逐步设置并解释添加或执行的每一行，而不是仅仅给您一堆带有大量配置的文件，并期望您能够了解事物的内容和方式正在发生。</p><p><em>那么，让我们开始吧！</em></p><h2 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a>先决条件</h2><blockquote><p>注意: 如果你没有它，请去 <a href="https://nodejs.org/">NodeJS</a> 网站，下载并安装到你的本地机器上</p></blockquote><ul><li>node version &gt;= 10</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 是一个动态的弱类型语言，在开发中比较容易出错。因为没有编译程序，为了寻找 JavaScrip</summary>
+      
+    
+    
+    
+    
+    <category term="React" scheme="http://blog.viewing.top/tags/React/"/>
+    
+    <category term="Typescript" scheme="http://blog.viewing.top/tags/Typescript/"/>
+    
+    <category term="ESLint" scheme="http://blog.viewing.top/tags/ESLint/"/>
+    
+  </entry>
+  
+</feed>
