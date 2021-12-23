@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
-Allow: /tags/ 
-Allow: /about/ 
+Allow: /tags/
+Allow: /about/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -11,6 +11,3 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-
-Sitemap: https://blog.hhking.cn/sitemap.xml
-Sitemap: https://blog.hhking.cn/baidusitemap.xml
