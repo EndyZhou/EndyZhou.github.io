@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Endy Talk</title>
+  <title>Endy</title>
   
   <subtitle>关于技术，关于生活</subtitle>
   <link href="http://blog.viewing.top/atom.xml" rel="self"/>
