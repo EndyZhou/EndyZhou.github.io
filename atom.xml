@@ -6,7 +6,7 @@
   <link href="http://blog.viewing.top/atom.xml" rel="self"/>
   
   <link href="http://blog.viewing.top/"/>
-  <updated>2021-12-23T03:51:45.301Z</updated>
+  <updated>2022-02-16T09:55:15.292Z</updated>
   <id>http://blog.viewing.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Failed to download metadata for repo ‘AppStream’ [CentOS]</title>
+    <link href="http://blog.viewing.top/2022/02/16/Failed-to-download-metadata-for-repo-%E2%80%98AppStream%E2%80%99-CentOS/"/>
+    <id>http://blog.viewing.top/2022/02/16/Failed-to-download-metadata-for-repo-%E2%80%98AppStream%E2%80%99-CentOS/</id>
+    <published>2022-02-16T08:34:17.000Z</published>
+    <updated>2022-02-16T09:55:15.292Z</updated>
+    
+    <content type="html"><![CDATA[<p>我在一台服务器上成功安装了<code>CentOS 8</code>，当我尝试使用<code>yum update -y</code> 时 我看到此错误消息：<br><img src="/images/appStream-install-error.jpg"></p><h2 id="下面是原因与修复方法"><a href="#下面是原因与修复方法" class="headerlink" title="下面是原因与修复方法"></a>下面是原因与修复方法</h2><blockquote><p>Fix Failed to download metadata for repo ‘AppStream’ [CentOS]<br><a href="https://www.centos.org/centos-linux-eol/">CentOS Linux8 已 2021 年 12 月 31 日 EOL</a> 这意味着 CentOS 8 将不再从 CentOS 官方项目获得开发资源。在 2021 年 12 月 31 日之后，如果您需要更新您的 CentOS，您需要将镜像更改为<a href="vault.centos.org">vault.centos.org</a>，它们将被永久存档。或者，您可能想要升级到 <a href="https://techglimpse.com/convert-centos8-linux-centosstream">CentOS Stream</a></p></blockquote><h3 id="Step1-进入-etc-yum-repos-d-目录"><a href="#Step1-进入-etc-yum-repos-d-目录" class="headerlink" title="Step1 进入/etc/yum.repos.d/目录"></a>Step1 进入/etc/yum.repos.d/目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/yum.repos.d/</span><br></pre></td></tr></table></figure><h3 id="Step2-运行以下命令"><a href="#Step2-运行以下命令" class="headerlink" title="Step2 运行以下命令"></a>Step2 运行以下命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;s/mirrorlist/#mirrorlist/g&#x27;</span> /etc/yum.repos.d/CentOS-*</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g&#x27;</span> /etc/yum.repos.d/CentOS-*</span><br></pre></td></tr></table></figure><h3 id="Step-3-现在运行-yum-update-已经ok"><a href="#Step-3-现在运行-yum-update-已经ok" class="headerlink" title="Step 3: 现在运行 yum update 已经ok;"></a>Step 3: 现在运行 <code>yum update</code> 已经ok;</h3><img src="/images/appStream-install.jpg">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我在一台服务器上成功安装了&lt;code&gt;CentOS 8&lt;/code&gt;，当我尝试使用&lt;code&gt;yum update -y&lt;/code&gt; 时 我看到此错误消息：&lt;br&gt;&lt;img src=&quot;/images/appStream-install-error.jpg&quot;&gt;&lt;/p&gt;
+&lt;h</summary>
+      
+    
+    
+    
+    
+    <category term="Bugs" scheme="http://blog.viewing.top/tags/Bugs/"/>
+    
+  </entry>
   
   <entry>
     <title>ESLint + React + Typescript</title>
