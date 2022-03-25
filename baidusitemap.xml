@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.viewing.top/2022/03/25/%E7%94%B3%E8%AF%B7letsencrypt%E6%B3%9B%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2022-03-25</lastmod>
+  </url>
+  <url>
+    <loc>http://blog.viewing.top/2022/03/11/%E6%9F%90%E4%B8%9Csk%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2022-03-11</lastmod>
+  </url>
+  <url>
     <loc>http://blog.viewing.top/2022/02/16/Failed-to-download-metadata-for-repo-%E2%80%98AppStream%E2%80%99-CentOS/</loc>
     <lastmod>2022-02-16</lastmod>
   </url>
