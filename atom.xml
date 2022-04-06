@@ -6,7 +6,7 @@
   <link href="http://blog.viewing.top/atom.xml" rel="self"/>
   
   <link href="http://blog.viewing.top/"/>
-  <updated>2022-03-25T05:15:46.798Z</updated>
+  <updated>2022-04-06T03:18:56.271Z</updated>
   <id>http://blog.viewing.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Error: ENFILE: file table overflow</title>
+    <link href="http://blog.viewing.top/2022/04/06/Error-ENFILE-file-table-overflow/"/>
+    <id>http://blog.viewing.top/2022/04/06/Error-ENFILE-file-table-overflow/</id>
+    <published>2022-04-06T03:09:09.000Z</published>
+    <updated>2022-04-06T03:18:56.271Z</updated>
+    
+    <content type="html"><![CDATA[<p>在<code>MacOs 10.15.3</code> 上面尝试启动一个 <code>umi server</code> 错误如下<br><img src='/images/overflow.png'></p><h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>   <code>这可能是由于 mac 上文件打开文件的限制。默认情况下，它设置为低。您将需要增加默认大小</code></p><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> kern.maxfiles=65536 | sudo tee -a /etc/sysctl.conf</span><br><span class="line"><span class="built_in">echo</span> kern.maxfilesperproc=65536 | sudo tee -a /etc/sysctl.conf</span><br><span class="line">sudo sysctl -w kern.maxfiles=65536</span><br><span class="line">sudo sysctl -w kern.maxfilesperproc=65536</span><br><span class="line"><span class="built_in">ulimit</span> -n 65536</span><br></pre></td></tr></table></figure><p>输入以上命令 问题解决</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在&lt;code&gt;MacOs 10.15.3&lt;/code&gt; 上面尝试启动一个 &lt;code&gt;umi server&lt;/code&gt; 错误如下&lt;br&gt;&lt;img src=&#39;/images/overflow.png&#39;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class</summary>
+      
+    
+    
+    
+    
+    <category term="Error: ENFILE: file table overflow" scheme="http://blog.viewing.top/tags/Error-ENFILE-file-table-overflow/"/>
+    
+    <category term="bug" scheme="http://blog.viewing.top/tags/bug/"/>
+    
+    <category term="umi" scheme="http://blog.viewing.top/tags/umi/"/>
+    
+    <category term="node" scheme="http://blog.viewing.top/tags/node/"/>
+    
+  </entry>
   
   <entry>
     <title>申请letsencrypt泛域名</title>
